@@ -34,6 +34,7 @@ public class HomePageActivity extends AppCompatActivity {
             case R.id.menuLogout:
                 FirebaseAuth.getInstance().signOut();
                 finish();
+
                 startActivity(new Intent(this, MainActivity.class));
                 break;
         }
